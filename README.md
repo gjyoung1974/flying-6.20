@@ -87,8 +87,8 @@ https://www.ibiblio.org/pub/X11/contrib/games/multiplayer/
  original 1995 versions and are kept for reference only. Run as before:
  ./xpool, ./xsnooker, ./xcarrom, ./xhockey, ./xcurling, ./xcannon (or
  ./flying -pool etc.). The default is a full-screen override-redirect
- window; use '-size <pixels>' for a window or '-no_override' for a managed
- full-screen window.
+ window; use '-size <pixels>' (i.e. -size 1920) for a window or '-no_override'
+ for a managed full-screen window.
 
  What was changed for the port:
  - Old C++ cleaned up so that it compiles with a current compiler (implicit
@@ -107,6 +107,7 @@ https://www.ibiblio.org/pub/X11/contrib/games/multiplayer/
        available and only the rectangles that were drawn to (the Xlib
        drawing calls are wrapped in xgraph.h to track them).
  - The game is now selected from the basename of argv[0], so ./xpool works.
+ - Source files and header files were moved into their respective directories
 
 
  History:
